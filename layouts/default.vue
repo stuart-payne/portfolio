@@ -1,7 +1,11 @@
 <template>
-  <div>
-    <Navbar />
-    <Nuxt />
+  <div class="content">
+    <div class="leftContent"></div>
+    <div class="mainContent">
+      <Navbar />
+      <Nuxt />
+    </div>
+    <div class="rightContent"></div>
   </div>
 </template>
 
@@ -16,6 +20,27 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+}
+.content {
+  display: grid;
+  grid-template-columns: 1fr minmax(0, 1000px) 1fr;
+  grid-auto-rows: minmax(100px, auto);
+  min-height: 800px;
+}
+
+.leftContent {
+  grid-column: 1;
+  background-color: hsl(0, 90%, 90%);
+}
+
+.rightContent {
+  grid-column: 3;
+  background-color: hsl(120, 90%, 90%);
+}
+
+.mainContent {
+  grid-column: 2;
+  background-color: hsl(240, 90%, 90%);
 }
 
 *,
