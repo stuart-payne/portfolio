@@ -1,10 +1,24 @@
 <template>
   <div class="nav">
     <nuxt-link class="item" to="/">Home</nuxt-link>
-    <nuxt-link class="item" to="/portfolio">Portfolio</nuxt-link>
+    <nuxt-link class="item" to="/portfolio"
+      ><font-awesome-icon :icon="faGithub" />Portfolio</nuxt-link
+    >
     <a class="item" href="">Github</a>
   </div>
 </template>
+
+<script>
+import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub'
+import Vue from 'vue'
+export default Vue.extend({
+  data() {
+    return {
+      faGithub,
+    }
+  },
+})
+</script>
 
 <style scoped>
 .nav {
