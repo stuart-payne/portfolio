@@ -1,8 +1,20 @@
 [
   {
-    "title": "Test",
-    "description": "Test",
-    "tags": ["Typescript", "Vue"],
+    "title": "catJAMMER - A Discord bot",
+    "description": "A joint rpject written in Typescript, this Node application is made to provide additional functionality to chatrooms on the popular app Discord. Some of these features include the ability to save and use GIFS, choose what colour they appear as and schedule reoccuring messages.",
+    "tags": ["Typescript", "Node", "Discord.js"],
+    "link": "https://github.com/"
+  },
+  {
+    "title": "To-Do - A React App",
+    "description": "An example application made using React and Bootstrap. Allows user to add tasks that they intend to do, mark them as complete or remove them. Includes abilty to filter the tasks based on completion and time left from completion date. Bootstrap was used for the styling.",
+    "tags": ["React", "Javascript", "Bootstrap"],
+    "link": "https://github.com/stuart-payne/to-do"
+  },
+  {
+    "title": "This Website - SSG made with Nuxt.js",
+    "description": "Using Nuxt.js this site was made with the objective to get the best of both worlds from a frontend framework like Vue while still keeping load times and file size down thanks to the static site generation of Nuxt. The styling is vanilla CSS and added in the Vue files allowing for scoping.",
+    "tags": [ "Nuxt.js", "Vue", "CSS", "HTML"],
     "link": "https://github.com/"
   }
 ]
