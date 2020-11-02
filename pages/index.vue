@@ -1,7 +1,7 @@
 <template>
   <div class="mainContainer">
-    <h1>Stuart Payne</h1>
-    <h2>Software Developer</h2>
+    <h1 class="title">Stuart Payne</h1>
+    <h2 class="subtitle">Software Developer</h2>
     <p>
       I'm software developer from the UK focused on web development. Experienced
       in both front and back end languages/frameworks. Have also dabbled in game
@@ -15,6 +15,11 @@
         :techs="tech.techs"
       />
     </div>
+    <p>
+      For examples of my code and projects which I have worked on click
+      <nuxt-link class="pLink" to="/portfolio"><b>here</b></nuxt-link>
+    </p>
+    <p>To get in contact, send me an email at <b>paynestu@gmail.com</b></p>
   </div>
 </template>
 
@@ -43,39 +48,54 @@ export default Vue.extend({
 })
 </script>
 
-<style scoped>
+<style>
+html {
+  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  color: #35495e;
+}
+
 .mainContainer {
+  padding-top: 20px;
   margin: 0 auto;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
 
+.pLink {
+  color: #97476f;
+}
+
+.mainContainer > * {
+  margin: 30px 0px;
+  padding: 10px;
+}
+
 .title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   display: block;
   font-weight: 300;
   font-size: 100px;
   color: #35495e;
   letter-spacing: 1px;
+  margin-bottom: 10px;
 }
 
 .techContainer {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: flex-start;
   justify-content: center;
 }
 
 .subtitle {
+  margin-top: 0px;
   font-weight: 300;
   font-size: 42px;
   color: #526488;
   word-spacing: 5px;
-  padding-bottom: 15px;
 }
 
 .links {

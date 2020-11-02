@@ -1,23 +1,14 @@
 <template>
   <div class="nav">
     <nuxt-link class="item" to="/">Home</nuxt-link>
-    <nuxt-link class="item" to="/portfolio"
-      ><font-awesome-icon :icon="faGithub" />Portfolio</nuxt-link
-    >
-    <a class="item" href="">Github</a>
+    <nuxt-link class="item" to="/portfolio">Portfolio</nuxt-link>
+    <a class="item" href="https://github.com/stuart-payne">Github</a>
   </div>
 </template>
 
 <script>
-import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub'
 import Vue from 'vue'
-export default Vue.extend({
-  data() {
-    return {
-      faGithub,
-    }
-  },
-})
+export default Vue.extend({})
 </script>
 
 <style scoped>
@@ -29,21 +20,24 @@ export default Vue.extend({
 }
 
 .item {
+  font-size: 1.2em;
   height: 1.5em;
   padding: 1.5em;
   text-decoration: none;
-  color: hsla(219, 100%, 4%, 1);
+  color: #35495e;
+  transition: background-color 0.5s;
+  transition: color 0.5s;
 }
 
 .item:visited,
 .item:link,
 .item:active {
   text-decoration: none;
-  color: #000000;
+  color: #35495e;
 }
 
 .item:hover {
   color: white;
-  background: hsla(219, 100%, 4%, 1);
+  background-color: #35495e;
 }
 </style>

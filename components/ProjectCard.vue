@@ -1,12 +1,12 @@
 <template>
-  <div class="card" @click="() => (window.location.href = link)">
+  <a class="card" :href="link">
     <h2 class="title">{{ title }}</h2>
     <p class="description">{{ description }}</p>
     <div class="tags">
       <!-- tag logic here -->
       <div v-for="tag in tags" :key="tag" class="tag">{{ tag }}</div>
     </div>
-  </div>
+  </a>
 </template>
 
 <script lang="ts">
@@ -35,12 +35,21 @@ export default Vue.extend({
 
 <style scoped>
 .card {
+  color: #35495e;
   margin-top: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-decoration: none;
   padding: 10px;
+  transition: background-color 0.5s;
+}
+
+a:hover,
+a:visited,
+a:link,
+a:active {
+  text-decoration: none;
 }
 
 .card:hover {
@@ -58,9 +67,10 @@ export default Vue.extend({
 
 .tag {
   margin: 4px;
+  font-style: italic;
   padding: 6px;
-  border: 1px solid black;
-  border-radius: 12px;
+  border-bottom: 1px solid #35495e;
+  border-radius: 8px;
 }
 
 .title {
