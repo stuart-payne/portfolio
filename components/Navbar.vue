@@ -26,7 +26,7 @@ export default Vue.extend({})
 .item {
   font-size: 1.1em;
   padding: 0.8em 1.2em;
-  border-top: 10px solid rgba(255, 255, 255, 0);
+  border-top: 3px solid rgba(255, 255, 255, 0);
   text-decoration: none;
   transition: border-top 0.5s;
 }
@@ -39,6 +39,6 @@ export default Vue.extend({})
 }
 
 .item:hover {
-  border-top: 10px solid rgba(255, 255, 255, 1);
+  border-top: 3px solid rgba(255, 255, 255, 1);
 }
 </style>
