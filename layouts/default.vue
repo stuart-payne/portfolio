@@ -1,11 +1,13 @@
 <template>
-  <div class="content">
-    <div class="leftContent"></div>
-    <div class="mainContent">
-      <Navbar />
-      <Nuxt />
+  <div>
+    <Navbar />
+    <div class="content">
+      <div class="leftContent"></div>
+      <div class="mainContent">
+        <Nuxt />
+      </div>
+      <div class="rightContent"></div>
     </div>
-    <div class="rightContent"></div>
   </div>
 </template>
 
@@ -20,7 +22,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
-  background-color: #1a2b46;
+  background: linear-gradient(#234a88, #a63e3e);
 }
 .content {
   display: grid;

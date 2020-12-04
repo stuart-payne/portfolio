@@ -2,7 +2,9 @@
   <div class="nav">
     <nuxt-link class="item" to="/">Home</nuxt-link>
     <nuxt-link class="item" to="/portfolio">Portfolio</nuxt-link>
-    <a class="item" href="https://github.com/stuart-payne">Github</a>
+    <a class="item" href="https://github.com/stuart-payne" target="_blank"
+      >Github</a
+    >
   </div>
 </template>
 
@@ -13,20 +15,20 @@ export default Vue.extend({})
 
 <style scoped>
 .nav {
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  border-bottom: 2px solid white;
+  border-bottom: 1px solid white;
+  background-image: linear-gradient(to right, #161616, #1c1c1c);
 }
 
 .item {
   font-size: 1.1em;
-  height: 1.5em;
-  padding: 1.5em;
-  border-bottom: 4px solid #1a2b46;
-  margin-bottom: 1px;
+  padding: 0.8em 1.2em;
+  border-top: 10px solid rgba(255, 255, 255, 0%);
   text-decoration: none;
-  transition: border-bottom 0.5s;
+  transition: border-top 0.5s;
 }
 
 .item:visited,
@@ -37,6 +39,6 @@ export default Vue.extend({})
 }
 
 .item:hover {
-  border-bottom: 4px solid white;
+  border-top: 10px solid rgba(255, 255, 255, 100%);
 }
 </style>

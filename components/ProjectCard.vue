@@ -1,5 +1,5 @@
 <template>
-  <a class="card" :href="link">
+  <a class="card" :href="link" target="_blank">
     <h2 class="title">{{ title }}</h2>
     <p class="description">{{ description }}</p>
     <div class="tags">
@@ -42,8 +42,9 @@ export default Vue.extend({
   align-items: center;
   text-decoration: none;
   padding: 4px;
-  border: 4px solid #1a2b46;
-  transition: border 0.5s;
+  transition: border-bottom 0.5s;
+  border-radius: 8px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0%);
 }
 
 a:hover,
@@ -54,7 +55,7 @@ a:active {
 }
 
 .card:hover {
-  border: 4px solid white;
+  border-bottom: 1px solid rgba(255, 255, 255, 100%);
 }
 
 .description {
@@ -70,7 +71,7 @@ a:active {
   margin: 4px;
   font-style: italic;
   padding: 6px;
-  border-bottom: 1px solid #35495e;
+  border-bottom: 1px solid white;
   border-radius: 8px;
 }
 
