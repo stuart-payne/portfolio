@@ -66,6 +66,11 @@ html {
 
 .pLink {
   color: #8ffbff;
+  text-decoration: none;
+}
+
+.pLink:hover {
+  text-decoration-line: underline;
 }
 
 .mainContainer > * {
