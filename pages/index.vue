@@ -65,7 +65,7 @@ html {
 }
 
 .pLink {
-  color: #97476f;
+  color: #8ffbff;
 }
 
 .mainContainer > * {

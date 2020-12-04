@@ -23,12 +23,12 @@ html {
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
   background: linear-gradient(#234a88, #a63e3e);
+  min-height: 100vh;
 }
 .content {
   display: grid;
   grid-template-columns: 1fr minmax(0, 800px) 1fr;
   grid-auto-rows: minmax(100px, auto);
-  min-height: 100vh;
 }
 
 .leftContent {
@@ -49,7 +49,6 @@ html {
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
   margin: 0;
 }
 </style>

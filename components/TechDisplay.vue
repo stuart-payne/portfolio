@@ -33,7 +33,7 @@ export default Vue.extend({
   text-align: center;
   font-weight: bold;
   font-size: 1.5em;
-  border-bottom: 1px solid #35495e;
+  border-bottom: 1px solid white;
   padding-bottom: 4px;
   margin-bottom: 4px;
   width: 100%;
