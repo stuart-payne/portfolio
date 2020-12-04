@@ -35,14 +35,15 @@ export default Vue.extend({
 
 <style scoped>
 .card {
-  color: #35495e;
+  color: white;
   margin-top: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-decoration: none;
-  padding: 10px;
-  transition: background-color 0.5s;
+  padding: 4px;
+  border: 4px solid #1a2b46;
+  transition: border 0.5s;
 }
 
 a:hover,
@@ -53,7 +54,7 @@ a:active {
 }
 
 .card:hover {
-  background-color: rgb(218, 218, 218);
+  border: 4px solid white;
 }
 
 .description {

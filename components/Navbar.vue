@@ -16,28 +16,27 @@ export default Vue.extend({})
   display: flex;
   flex-direction: row;
   justify-content: center;
-  border-bottom: 1px solid hsla(219, 100%, 4%, 1);
+  border-bottom: 2px solid white;
 }
 
 .item {
-  font-size: 1.2em;
+  font-size: 1.1em;
   height: 1.5em;
   padding: 1.5em;
+  border-bottom: 4px solid #1a2b46;
+  margin-bottom: 1px;
   text-decoration: none;
-  color: #35495e;
-  transition: background-color 0.5s;
-  transition: color 0.5s;
+  transition: border-bottom 0.5s;
 }
 
 .item:visited,
 .item:link,
 .item:active {
   text-decoration: none;
-  color: #35495e;
+  color: white;
 }
 
 .item:hover {
-  color: white;
-  background-color: #35495e;
+  border-bottom: 4px solid white;
 }
 </style>

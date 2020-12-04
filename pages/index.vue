@@ -36,7 +36,7 @@ export default Vue.extend({
         },
         {
           experience: 'Intermediate',
-          techs: ['Laravel', 'PHP', 'Vue', 'React', 'TypeScript'],
+          techs: ['TypeScript', 'Laravel', 'PHP', 'Vue', 'React'],
         },
         {
           experience: 'Basic',
@@ -52,7 +52,7 @@ export default Vue.extend({
 html {
   font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  color: #35495e;
+  color: white;
 }
 
 .mainContainer {
@@ -77,7 +77,6 @@ html {
   display: block;
   font-weight: 300;
   font-size: 100px;
-  color: #35495e;
   letter-spacing: 1px;
   margin-bottom: 10px;
 }
@@ -94,7 +93,6 @@ html {
   margin-top: 0px;
   font-weight: 300;
   font-size: 42px;
-  color: #526488;
   word-spacing: 5px;
 }
 
