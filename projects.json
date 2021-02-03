@@ -1,7 +1,7 @@
 [
   {
     "title": "catJAMMER - A Discord bot",
-    "description": "A joint project written in Typescript. This Node application is made to provide additional functionality to chatrooms on the popular app Discord. Some of these features include the ability to save and use GIFS, choose what colour they appear as and schedule reoccuring messages.",
+    "description": "A joint project written in Typescript. This Node application is made to provide additional functionality to chatrooms on the popular app Discord. Some of these features include the ability to save and use GIFS, create polls and schedule reoccuring messages.",
     "tags": ["Typescript", "Node", "Discord.js"],
     "link": "https://github.com/bluefinger/catjammer"
   },
@@ -14,7 +14,7 @@
   {
     "title": "This Website - SSG made with Nuxt.js",
     "description": "Using Nuxt.js this site was made with the objective to get the best of both worlds from a frontend framework like Vue while still keeping load times and file size down thanks to the static site generation of Nuxt. The styling is vanilla CSS and added in the Vue files allowing for scoping.",
-    "tags": [ "Nuxt.js", "Vue", "CSS", "HTML"],
+    "tags": ["Nuxt.js", "Vue", "CSS", "HTML"],
     "link": "https://github.com/stuart-payne/portfolio"
   },
   {
