@@ -27,7 +27,7 @@ html {
 }
 .content {
   display: grid;
-  grid-template-columns: 1fr minmax(0, 800px) 1fr;
+  grid-template-columns: 1fr minmax(0, 600px) 1fr;
   grid-auto-rows: minmax(100px, auto);
 }
 

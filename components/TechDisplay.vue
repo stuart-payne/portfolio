@@ -21,7 +21,7 @@ export default Vue.extend({
 </script>
 <style scoped>
 .container {
-  width: 200px;
+  width: 160px;
   display: flex;
   flex-direction: column;
   align-items: center;

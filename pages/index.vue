@@ -32,15 +32,15 @@ export default Vue.extend({
       techs: [
         {
           experience: 'Experienced',
-          techs: ['JavaScript', 'Node', 'HTML', 'CSS', 'C#'],
+          techs: ['JavaScript', 'Typescript', 'Node', 'HTML', 'CSS'],
         },
         {
           experience: 'Intermediate',
-          techs: ['TypeScript', 'Laravel', 'PHP', 'Vue', 'React'],
+          techs: ['C#', 'Laravel', 'PHP', 'Vue', 'React'],
         },
         {
           experience: 'Basic',
-          techs: ['Unity', 'ASP.net', 'MySQL', 'MongoDB'],
+          techs: ['C', 'Unity', 'ASP.net', 'MySQL', 'MongoDB'],
         },
       ],
     }
@@ -74,7 +74,6 @@ html {
 }
 
 .mainContainer > * {
-  margin: 30px 0px;
   padding: 10px;
 }
 
@@ -83,7 +82,6 @@ html {
   font-weight: 300;
   font-size: 100px;
   letter-spacing: 1px;
-  margin-bottom: 10px;
 }
 
 .techContainer {
